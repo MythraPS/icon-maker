@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- No internet permission: the app never goes online. -->
+    <!-- Lets the app list the other apps on the phone that can be opened. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+    <application
+        android:label="Icon Maker"
+        android:icon="@drawable/ic_app"
+        android:allowBackup="false"
+        android:theme="@android:style/Theme.DeviceDefault.DayNight">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- The icon itself: a 1x1 widget (a shortcut would carry Icon Maker's badge). -->
+        <receiver android:name=".IconWidget" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/icon_widget" />
+        </receiver>
+    </application>
+</manifest>

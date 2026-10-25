@@ -1,0 +1,10 @@
+Make your own home-screen icons. Pick an app or a web link, pick a picture, crop it, give it a name, and the icon is added to your home screen.
+
+<ul>
+<li>No ads, no internet access and no permissions: the app never goes online.</li>
+<li>No badge: icons are added as 1×1 widgets, so they don't get the small badge Android puts on shortcuts made by another app.</li>
+<li>Crop your picture: drag to move, pinch to zoom, and the circle shows exactly what the icon will look like.</li>
+<li>Icons for web pages as well as apps.</li>
+</ul>
+
+Android doesn't let any app change another app's real icon. To replace one, add your new icon, then remove the original from your home screen. The app stays installed.

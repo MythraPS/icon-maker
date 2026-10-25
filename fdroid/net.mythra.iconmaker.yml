@@ -1,0 +1,25 @@
+Categories:
+  - Theming
+License: MIT
+AuthorName: MythraPS
+SourceCode: https://github.com/MythraPS/icon-maker
+IssueTracker: https://github.com/MythraPS/icon-maker/issues
+Donate: https://www.patreon.com/mythraps
+
+AutoName: Icon Maker
+
+RepoType: git
+Repo: https://github.com/MythraPS/icon-maker.git
+
+Builds:
+  - versionName: '1.5'
+    versionCode: 6
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.5'
+CurrentVersionCode: 6
